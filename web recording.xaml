@@ -1,0 +1,290 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="843.2,3294.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="610.4,3229.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="emailaddress" />
+      <Variable x:TypeArguments="x:String" Name="password" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="548,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter your email">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[emailaddress]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="548,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Enter your password">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[password]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="548,2593.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="www.uipath.com">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="514.4,2444.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: AI at work-The Business Automation Platform™-Leader in RPA, AI &amp; Automation | Ui" sap:VirtualizedContainerService.HintSize="452,557.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3b9a20d6-a601-465f-8513-b35d3cc0a97b" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,308.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Try UiPath Free'" sap:VirtualizedContainerService.HintSize="353.6,218.4" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3b9a20d6-a601-465f-8513-b35d3cc0a97b" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.uipath.com/" CVScreenId="7d6891c1-832a-4fd0-a071-7a4eb6be649b" CvElementArea="1647, 251, 211, 66" CvTextArea="1676, 274, 152, 23" CvTextArgument="Try UiPath Free" CvType="Button" DesignTimeRectangle="1649, 255, 209, 60" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Try UiPath Free' parentid='gatsby-focus-wrapper' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Try UiPath Free' parentid='gatsby-focus-wrapper' tag='A' type='' class='sc-19d6789-0 eiFOLM CTA ' check:innerText='Try UiPath Free' /&gt;" Guid="e301dbde-1af9-4d61-a775-a0f139ae8d62" InformativeScreenshot="2e0a1a7104dcc565aa5857b0b438796e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AI at work-The Business Automation Platform™-Leader in RPA, AI &amp;amp; Automation | UiPath' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d7f0f6714ebeb242d06ad86b0a85caed.jpg" Selector="&lt;html app='chrome.exe' title='AI at work-The Business Automation Platform™-Leader in RPA, AI &amp;amp; Automation | UiPath' /&gt;" Title="AI at work-The Business Automation Platform™-Leader in RPA, AI &amp; Automation | UiPath" Url="https://www.uipath.com/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Continue with UiPath" sap:VirtualizedContainerService.HintSize="452,1798.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="bd303abb-ab0f-478a-8d45-7243ec1b410f" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1558.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue with Google'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd303abb-ab0f-478a-8d45-7243ec1b410f" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://account.uipath.com/login?state=hKFo2SBtRUdhR2o5R29MUm82aHdUa04za1BCYXdlVlZPRW9PNKFupWxvZ2luo3RpZNkgQ2JhZUdnWWw2YWVKNUNWbXFRbGdGaE1CWmJqUTNfUkujY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid%20profile%20email%20read%3Acurrent_user%20update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=signup&amp;platform_name=UiPath%20Automation%20Cloud%20for%20enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath%20Automation%20Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=ZGljS3FULk8tSWw5UUdhM2JCLXFmcnllQU1VVThHMmNIdEpxOHFqTF9obw%3D%3D&amp;code_challenge=-1aPxEPIUSeSyxshacDkbDPFHPrxG28YRaXMrGr2edI&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" CVScreenId="a45382a0-fe17-498d-81d8-9449a1533593" CvElementArea="1195, 842, 505, 53" CvType="Button" DesignTimeRectangle="1199, 844, 500, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Continue with Google' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Continue with Google' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-fullWidth MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-fullWidth jss27 jss28 css-g9vppd' check:innerText='Continue with Google' /&gt;" Guid="e57e89a7-0ac8-4518-82bb-68a0ce392524" InformativeScreenshot="a4db8f1d8d1ca34c8269d62500ea45d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Continue with UiPath' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Use another account'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd303abb-ab0f-478a-8d45-7243ec1b410f" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;scope=email%20profile&amp;state=yvZggjdsYT4DQOf2ZyFw8Xr7C7nvWTdg&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;service=lso&amp;o2v=1&amp;ddm=0&amp;flowName=GeneralOAuthFlow" CVScreenId="0dda952c-31f5-4e54-ae70-043f38ff200f" CvTextArea="1047, 587, 198, 18" CvTextArgument="Use another account" CvType="Text" DesignTimeRectangle="979, 565, 675, 65" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-role='link' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='link' type='' tag='DIV' class='VV3oRb YZVTmd SmR8' aaname='' check:innerText='Use another account' /&gt;" Guid="7f587a18-a823-4b90-b231-6f2bf228a4c3" InformativeScreenshot="cbd8ddcea1aafeda9897dfeeb3ecd2d2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in – Google accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT identifierId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bd303abb-ab0f-478a-8d45-7243ec1b410f" Text="[emailaddress]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;scope=email%20profile&amp;state=yvZggjdsYT4DQOf2ZyFw8Xr7C7nvWTdg&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;service=lso&amp;o2v=1&amp;ddm=0&amp;flowName=GeneralOAuthFlow&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMmr1-3aGvseNtqTS4jhTREoUNDL9fiAuVOYG7BZm14IaY_IWoN5U6vOdx7SkB-1-y_OVWwB6htUsE57p8qvyiYyVA6xil9PmAsiYpz21De9qFRfpQrjlFddP5MUU-VfGznBmZR7wrvcVc3KmwNw968qFlmYvs4uhQznYG7e7jrRWmgyC0DK2eFUoRaCHsIYXiKBJIdGI4IxnVpJNmMwAkJrygs6UIHKjJupWH5Bn4_wkPuXe_f2WIrcB5PjWpokwyKTMEM27aTqUc8Hmdxg65YvQ4uH4th8F6Ajl4vwS74oNl3gm6l4F1ND1vgY-Z9WvU93GLypVNrCfkAgy_t0eyBxX-WQ5_a_79HBa5Ou4LGTHWcUnaTcj9coNwuVJrnfuwn1Bo2PzIrW6LrBP6G-xjfQxDLc5FIGlqwUUaxvqAg8PQW1I7-JOZcULexungPeJVvwPWXRR7QUOsqwCtjyErTmW52pg%26flowName%3DGeneralOAuthFlow%26as%3DS1127265064%253A1722849771038507%26client_id%3D728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com%23" DesignTimeRectangle="1002, 480, 630, 65" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="a2571e18-1c26-42da-ba65-8ab35aeff8ff" InformativeScreenshot="229c049fb29c604bc0324ae3f03056e1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in – Google accounts' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd303abb-ab0f-478a-8d45-7243ec1b410f" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;scope=email%20profile&amp;state=yvZggjdsYT4DQOf2ZyFw8Xr7C7nvWTdg&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;service=lso&amp;o2v=1&amp;ddm=0&amp;flowName=GeneralOAuthFlow&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMmr1-3aGvseNtqTS4jhTREoUNDL9fiAuVOYG7BZm14IaY_IWoN5U6vOdx7SkB-1-y_OVWwB6htUsE57p8qvyiYyVA6xil9PmAsiYpz21De9qFRfpQrjlFddP5MUU-VfGznBmZR7wrvcVc3KmwNw968qFlmYvs4uhQznYG7e7jrRWmgyC0DK2eFUoRaCHsIYXiKBJIdGI4IxnVpJNmMwAkJrygs6UIHKjJupWH5Bn4_wkPuXe_f2WIrcB5PjWpokwyKTMEM27aTqUc8Hmdxg65YvQ4uH4th8F6Ajl4vwS74oNl3gm6l4F1ND1vgY-Z9WvU93GLypVNrCfkAgy_t0eyBxX-WQ5_a_79HBa5Ou4LGTHWcUnaTcj9coNwuVJrnfuwn1Bo2PzIrW6LrBP6G-xjfQxDLc5FIGlqwUUaxvqAg8PQW1I7-JOZcULexungPeJVvwPWXRR7QUOsqwCtjyErTmW52pg%26flowName%3DGeneralOAuthFlow%26as%3DS1127265064%253A1722849771038507%26client_id%3D728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com%23" DesignTimeRectangle="1536, 740, 98, 50" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='identifierNext' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='identifierNext' tag='DIV' type='' class='VfPpkd-Jh9lGc' aaname='' /&gt;" Guid="e304f8df-29b2-4fe1-8e81-f93cb27e27dd" InformativeScreenshot="bc95cc07c05e716853da1f284bdaf2dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in – Google accounts' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter your password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="bd303abb-ab0f-478a-8d45-7243ec1b410f" Text="[password]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=ALoj5Ar7GZbIut_WlFvtbd95KRjGl-OgkjpSA6gdpoJeQnvcfy3HGq-7FulYFYw4&amp;checkConnection=youtube%3A590&amp;checkedDomains=youtube&amp;cid=1&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMmr1-3aGvseNtqTS4jhTREoUNDL9fiAuVOYG7BZm14IaY_IWoN5U6vOdx7SkB-1-y_OVWwB6htUsE57p8qvyiYyVA6xil9PmAsiYpz21De9qFRfpQrjlFddP5MUU-VfGznBmZR7wrvcVc3KmwNw968qFlmYvs4uhQznYG7e7jrRWmgyC0DK2eFUoRaCHsIYXiKBJIdGI4IxnVpJNmMwAkJrygs6UIHKjJupWH5Bn4_wkPuXe_f2WIrcB5PjWpokwyKTMEM27aTqUc8Hmdxg65YvQ4uH4th8F6Ajl4vwS74oNl3gm6l4F1ND1vgY-Z9WvU93GLypVNrCfkAgy_t0eyBxX-WQ5_a_79HBa5Ou4LGTHWcUnaTcj9coNwuVJrnfuwn1Bo2PzIrW6LrBP6G-xjfQxDLc5FIGlqwUUaxvqAg8PQW1I7-JOZcULexungPeJVvwPWXRR7QUOsqwCtjyErTmW52pg%26flowName%3DGeneralOAuthFlow%26as%3DS1127265064%253A1722849771038507%26client_id%3D728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com%23&amp;ddm=0&amp;flowName=GeneralOAuthFlow&amp;o2v=1&amp;prompt=select_account&amp;pstMsg=1&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;response_type=code&amp;scope=email%20profile&amp;service=lso&amp;state=yvZggjdsYT4DQOf2ZyFw8Xr7C7nvWTdg" CVScreenId="77fb5a5d-c9d8-4841-9483-686e369aeddc" CvElementArea="1000, 496, 634, 73" CvType="InputBox" DesignTimeRectangle="1002, 502, 630, 65" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="be63c335-d9c5-40ff-a160-0b79a125ff73" InformativeScreenshot="24072a6f273a9e7fc45f576ddf1b8b31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in – Google accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="77fb5a5d-c9d8-4841-9483-686e369aeddc" CvElementArea="1000, 496, 634, 73" CvType="InputBox" DesignTimeRectangle="1009, 491, 153, 17" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Enter your password' parentid='password' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Enter your password' parentid='password' tag='DIV' type='' class='AxOyFc snByac' check:innerText='Enter your password' /&gt;" Guid="a8ffa65c-2a5f-4f9e-82ba-767abd2a975b" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="353.6,218.4" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd303abb-ab0f-478a-8d45-7243ec1b410f" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=ALoj5Ar7GZbIut_WlFvtbd95KRjGl-OgkjpSA6gdpoJeQnvcfy3HGq-7FulYFYw4&amp;checkConnection=youtube%3A590&amp;checkedDomains=youtube&amp;cid=1&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMmr1-3aGvseNtqTS4jhTREoUNDL9fiAuVOYG7BZm14IaY_IWoN5U6vOdx7SkB-1-y_OVWwB6htUsE57p8qvyiYyVA6xil9PmAsiYpz21De9qFRfpQrjlFddP5MUU-VfGznBmZR7wrvcVc3KmwNw968qFlmYvs4uhQznYG7e7jrRWmgyC0DK2eFUoRaCHsIYXiKBJIdGI4IxnVpJNmMwAkJrygs6UIHKjJupWH5Bn4_wkPuXe_f2WIrcB5PjWpokwyKTMEM27aTqUc8Hmdxg65YvQ4uH4th8F6Ajl4vwS74oNl3gm6l4F1ND1vgY-Z9WvU93GLypVNrCfkAgy_t0eyBxX-WQ5_a_79HBa5Ou4LGTHWcUnaTcj9coNwuVJrnfuwn1Bo2PzIrW6LrBP6G-xjfQxDLc5FIGlqwUUaxvqAg8PQW1I7-JOZcULexungPeJVvwPWXRR7QUOsqwCtjyErTmW52pg%26flowName%3DGeneralOAuthFlow%26as%3DS1127265064%253A1722849771038507%26client_id%3D728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com%23&amp;ddm=0&amp;flowName=GeneralOAuthFlow&amp;o2v=1&amp;prompt=select_account&amp;pstMsg=1&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;response_type=code&amp;scope=email%20profile&amp;service=lso&amp;state=yvZggjdsYT4DQOf2ZyFw8Xr7C7nvWTdg" CVScreenId="77fb5a5d-c9d8-4841-9483-686e369aeddc" CvElementArea="1532, 765, 105, 57" CvTextArea="1564, 784, 42, 17" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1536, 769, 98, 50" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='passwordNext' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='passwordNext' tag='DIV' type='' class='VfPpkd-Jh9lGc' aaname='' /&gt;" Guid="f7e19945-d851-4cac-94f8-5dcc1c951077" InformativeScreenshot="a91f2a4a9419b9d98ab6840926deefc1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in – Google accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACEklEQVRYR+2Xv0scURSFV1fXrEFEIUsSbZLCIp2VKKTQYq00C5Igai0hTf4AtYmFlWBiJdiGpEwbMIJY2FmIGESQkMLKNAFR/P2dx51hnA1E3Xmjggc+5s257745szs7M5s5LBbObpJbF+AEjjyjY/wzgApT0AclT2jtaTiFsgBKV8p4FscYhPBT8BaAtargAWTNcmLffwDWqYP38APm4JmVLh+AcQ50BqLG7AvC11lG57mzZdsDfyFYe9o1IMb/D8A2D7OwaAy77pjwG2He5uhs+81/DccQrP0Zqq12qQANsGK+GJMfF/4jWI/Me2d+C3yHPfgFLpjE2H8AiXEzdMBzqDI7nQBsdT10QTfoenjiGhDjVAK0wk84hH0Ycg2IcWoBts3TXW/ENSDG9wHuZoBx1x0TvrcAD2HZfDHpumPCfwybkXmj5lccoAa+mS++wIWnmoTXDrs2J9pfWQCJ8YdIbQc6reTEvkLqBSY654XVEgmgO9kfq4k1eAsvoRc+QvSJ9xVy1ptIgFqYsVqAGvWAOYh44jeEnxDjygNI7Osq1+NWt9NgXhxdhK+sxYn9ZAJIePUwAHqmr8IWbMACTECbTQ2FVwB9JfolLUHRSlcPEIhaFprgKegAeSuViZrelPRSo/AifKNifL0ASYlj3N4AMvWn4Q1okg+09ifQhVkWQKigID4JDy7iAVLnhgMUzs4BKkIMusju2kIAAAAASUVORK5CYII=" InformativeScreenshot="f6f2c4b3b7504aff49936d9c9652a37a.jpg" Selector="&lt;html app='chrome.exe' title='Continue with UiPath' /&gt;" Title="Continue with UiPath" Url="https://account.uipath.com/login?state=hKFo2SBtRUdhR2o5R29MUm82aHdUa04za1BCYXdlVlZPRW9PNKFupWxvZ2luo3RpZNkgQ2JhZUdnWWw2YWVKNUNWbXFRbGdGaE1CWmJqUTNfUkujY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid%20profile%20email%20read%3Acurrent_user%20update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=signup&amp;platform_name=UiPath%20Automation%20Cloud%20for%20enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath%20Automation%20Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=ZGljS3FULk8tSWw5UUdhM2JCLXFmcnllQU1VVThHMmNIdEpxOHFqTF9obw%3D%3D&amp;code_challenge=-1aPxEPIUSeSyxshacDkbDPFHPrxG28YRaXMrGr2edI&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
